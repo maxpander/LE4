@@ -101,9 +101,7 @@ public class AppDesign {
 		JSplitPane splitPane = new JSplitPane();
 		frame.getContentPane().add(splitPane, BorderLayout.CENTER);
 		
-		
-		
-		 DefaultMutableTreeNode root = new DefaultMutableTreeNode("Layer");
+		DefaultMutableTreeNode root = new DefaultMutableTreeNode("Layer");
 	        //create the child nodes
 	        DefaultMutableTreeNode vegetableNode = new DefaultMutableTreeNode("Vegetables");
 	        DefaultMutableTreeNode fruitNode = new DefaultMutableTreeNode("Fruits");
@@ -111,8 +109,7 @@ public class AppDesign {
 	        //add the child nodes to the root node
 	        root.add(vegetableNode);
 	        root.add(fruitNode);
-		
-		
+			
 		
 		JTree tree = new JTree(root);
 		splitPane.setLeftComponent(tree);
