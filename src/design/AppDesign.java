@@ -34,7 +34,7 @@ import java.awt.Color;
 import javax.swing.JTextField;
 
 public class AppDesign {
-	// Wurzel PrÃ¤sentationsschicht
+	// Wurzel Präsentationsschicht
 		private JFrame frame;
 		
 		// Wurzel Fachlogikschicht
@@ -103,9 +103,19 @@ public class AppDesign {
 		
 		DefaultMutableTreeNode root = new DefaultMutableTreeNode("Layer");
 	        //create the child nodes
-	        DefaultMutableTreeNode vegetableNode = new DefaultMutableTreeNode("Vegetables");
+		 	DefaultMutableTreeNode vegetableNode = new DefaultMutableTreeNode("Vegetables");
+	        vegetableNode.add(new DefaultMutableTreeNode("Capsicum"));
+	        vegetableNode.add(new DefaultMutableTreeNode("Carrot"));
+	        vegetableNode.add(new DefaultMutableTreeNode("Tomato"));
+	        vegetableNode.add(new DefaultMutableTreeNode("Potato"));
+	         
 	        DefaultMutableTreeNode fruitNode = new DefaultMutableTreeNode("Fruits");
-	 
+	        fruitNode.add(new DefaultMutableTreeNode("Banana"));
+	        fruitNode.add(new DefaultMutableTreeNode("Mango"));
+	        fruitNode.add(new DefaultMutableTreeNode("Apple"));
+	        fruitNode.add(new DefaultMutableTreeNode("Grapes"));
+	        fruitNode.add(new DefaultMutableTreeNode("Orange"));
+	        
 	        //add the child nodes to the root node
 	        root.add(vegetableNode);
 	        root.add(fruitNode);
@@ -122,7 +132,7 @@ public class AppDesign {
 		
 		String[][] rowData = {
 				{ "1", "Japan", "245" }, { "2", "USA", "240" }, { "3", "Italien", "220" },
-				{ "4", "Spanien", "217" }, { "5", "TÃ¼rkei", "215"} ,{ "6", "England", "214" },
+				{ "4", "Spanien", "217" }, { "5", "Türkei", "215"} ,{ "6", "England", "214" },
 				{ "7", "Frankreich", "190" }, {"8", "Griechenland", "185" },
 				{ "9", "Deutschland", "180" }, {"10", "Portugal", "170" }
 				};
