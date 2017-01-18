@@ -37,5 +37,7 @@ public class Project extends ArrayList<Layer<? extends Feature>> implements Seri
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	
 
 }

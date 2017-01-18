@@ -16,6 +16,7 @@ import javax.swing.JTable;
 
 import examples.AppProjectTest;
 import examples.TestMap;
+import model.Layer;
 import model.Project;
 
 import javax.swing.JMenu;
@@ -104,7 +105,7 @@ public class AppDesign {
 		DefaultMutableTreeNode root = new DefaultMutableTreeNode("Layer");
 	        //create the child nodes
 		 	DefaultMutableTreeNode vegetableNode = new DefaultMutableTreeNode("Vegetables");
-	        vegetableNode.add(new DefaultMutableTreeNode("Capsicum"));
+		 	vegetableNode.add(new DefaultMutableTreeNode("Capsicum"));
 	        vegetableNode.add(new DefaultMutableTreeNode("Carrot"));
 	        vegetableNode.add(new DefaultMutableTreeNode("Tomato"));
 	        vegetableNode.add(new DefaultMutableTreeNode("Potato"));
@@ -116,9 +117,24 @@ public class AppDesign {
 	        fruitNode.add(new DefaultMutableTreeNode("Grapes"));
 	        fruitNode.add(new DefaultMutableTreeNode("Orange"));
 	        
+
+	         DefaultMutableTreeNode test1 = new DefaultMutableTreeNode(project.get(0));
+	         DefaultMutableTreeNode test2 = new DefaultMutableTreeNode(project.get(1));
+
+	        
+	        
 	        //add the child nodes to the root node
 	        root.add(vegetableNode);
 	        root.add(fruitNode);
+
+	        root.add(test1);
+	        root.add(test2);
+	     
+	    
+	        
+	   
+
+			
 			
 		
 		JTree tree = new JTree(root);
